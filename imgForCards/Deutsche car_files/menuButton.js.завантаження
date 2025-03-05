@@ -1,0 +1,46 @@
+let menu_window = document.querySelector(".menu_window")
+
+function menuButton() {
+    menu_window.classList.add("open_menu_window");
+    Content_H();
+    Recommend_H();
+    Swiper_H();
+    Book_H();
+    About_H();
+} 
+
+//hiding a swiper
+let swiper_h = document.querySelector(".swiper")
+
+function Swiper_H() {
+    swiper_h.classList.add("hidden_swiper");
+}
+
+//hiding a content section
+let content_h = document.querySelector(".content")
+
+function Content_H() {
+    content_h.classList.add("hidden_content");
+    console.log("Activate");
+}
+
+//hiding a recommend section
+let recommend_h = document.querySelector(".recommend_section")
+
+function Recommend_H() {
+    recommend_h.classList.add("hidden_recommend");
+}
+
+//hiding a book test drive section
+let book_h = document.querySelector(".test_drive_section")
+
+function Book_H() {
+    book_h.classList.add("hidden_book");
+}
+
+//hiding about section 
+let about_h = document.querySelector(".about_section")
+
+function About_H() {
+    about_h.classList.add("hidden_about");
+}

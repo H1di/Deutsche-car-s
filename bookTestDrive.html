@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Test Drive Booking</title>
+    <link rel="stylesheet" href="book_test_drive.css">
+</head>
+
+<body>
+    <div>
+        <img id="menu_button" src="/img/menu.png" alt="menu_button" onclick="menuButton()">
+    
+        <div class="menu_window">
+    
+            <img class="close_button" src="img_icons/close-button.png" alt="" onclick="CloseMenuButton()">
+    
+            <div class="about_section_header">
+                <div class="about_group_header">
+                    <div class="about_contact_header">
+                        <h2>Contact</h2>
+                        <p onclick="window.location.href='contact.html'">Contact us</p>
+                        <p>Find a Deutsche car service</p>
+                    </div>
+                    <div class="about_links_header">
+                        <h2>Quick Links</h2>
+                        <p onclick="window.location.href='bookTestDrive.html'">Book a test drive</p>
+                        <p onclick="window.location.href='view.html'">Our cars</p>
+                        <p>Book a service</p>
+                    </div>
+                    <div class="about_exp_header">
+                        <h2>Experience Deutsche car`s</h2>
+                        <p>Careers</p>
+                        <p onclick="window.location.href='index.html'">DeutscheCars.com</p>
+                    </div>
+                </div>
+                <div class="about_icons_header">
+                    <a href="https://www.facebook.com" target="_blank"><img src="img_icons/facebook.png" alt=""> </a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="img_icons/instagram.png" alt=""> </a>
+                    <a href="https://www.tiktok.com" target="_blank"><img src="img_icons/tik-tok.png" alt=""> </a>
+                    <a href="https://x.com" target="_blank"><img src="img_icons/twitter-alt.png" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">    
+        <h1 class="header_name"> Deutsche car`s</h1>
+    
+        <img id="logo" src="/img/logo.png" alt="">
+    
+        <img id="header_back" src="img/volks_banner_empty.png" alt="">
+    </div>
+
+    <img id="backbutton" src="img/backbutton.png" alt="">
+    <div class="container">
+            <h2>Book a Test Drive</h2>
+            <p>You chose this address: </p>
+            <span id="AddressTest"> </span>
+        <div class="cont_form">
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="car">Select Car</label>
+            <select id="car" name="car">
+                <option value="Mercedes A class">Mercedes A class</option>
+                <option value="BMW X5">BMW X5</option>
+                <option value="The Golf">The Golf</option>
+                <option value="The Passat">The Passat</option>
+            </select>
+
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <p class="book_button" onclick="openPopup()">BOOK NOW</p>
+        </form>
+        <div class="popup" id="popup">
+                <h2>Your test-drive is booked!</h2>
+                <p>We are waiting for you!</p>
+                <h3 onclick="window.location.href='index.html'">Back to main page</h3>
+            </div>
+        </div>
+    </div>
+    <script src="receive.js"></script>
+    <script src="popup.js"></script>
+    <script src="menuButton.js"></script>
+</body>
+
+</html>

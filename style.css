@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "GermanLight";
+}
+
+/* menu window*/
+#menu_button {
+    display: flex;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    z-index: 2;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.menu_window {
+    position:fixed;
+    z-index: 6;
+    background: #01a4e1;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.open_menu_window {
+    visibility: visible;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.close_button {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: left;
+    left: 10%;
+    top: 5%;
+    cursor: pointer;
+}
+
+.about_section_header {
+    padding: 45px 45px 0 45px;
+    margin-bottom: 30px;
+    border-bottom: solid black;
+    justify-content: space-between;
+}
+
+.about_group_header {
+    padding: 80px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.about_contact_header {
+    margin: 30px;
+}
+
+.about_links_header {
+    margin: 30px;
+}
+
+.about_exp_header {
+    margin: 30px;
+}
+
+.about_group_header h2 {
+    font-family: "GermanFont", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.about_group_header p {
+    margin: 30px 0 30px 0;
+    font-size: 30px;
+    line-height: 2;
+    font-weight: 900;
+}
+
+.about_contact_header p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about_links_header p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about_exp_header p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about_icons_header {
+    display: flex;
+    justify-content: center;
+}
+
+.about_icons_header img {
+    width: 70px;
+    height: 70px;
+    margin: 0 25px 0 25px;
+    cursor: pointer;
+}
+
+/* end menu window */
+
+/* slider */
+
+#slider_main {
+    height: 10%;
+}
+
+.swiper-wrapper {
+    height: 10%;
+    width: 100%;
+}
+
+#slider img{
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* end slider */
+
+/* header section */
+.header_name {
+    display: flex;
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translateX(-30%);
+    font-size: 80px;
+    font-family: "GermanFont", cursive, serif;
+    color: white;
+    -webkit-text-stroke: 0.1px rgb(62, 170, 205);
+    top: 20px;
+}
+
+
+#logo {
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    width: 300px;
+    height: 300px;
+    left: 35%;
+    transform: translateX(-25%);
+    top: -50px;
+}
+
+
+
+.page-title {
+    text-align: center;
+}
+
+
+/* end header section */
+
+/* your deutsche car`s section */
+.content {
+    display: block;
+    margin: 30px 10px 0 10px;
+}
+
+.content h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "GermanFont", cursive, serif;
+    font-size: 50px;
+}
+
+.content h2{
+    display: flex;
+    font-family: "GermanFont", cursive, serif;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc_car {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    padding-bottom: 4em;
+    border-bottom: solid black;
+}
+
+.desc_car p {
+    width: 50%;
+    font-family: "GermanLight", cursive, serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.desc_car span {
+    font-family: "GermanLight", serif;
+}
+
+#volks_family {
+    width: 600px;
+    height: 350px;
+    
+    
+}
+
+/* end your deutsche car`s section */
+
+/* recommend cars section */
+.recommend_section {
+    padding-bottom: 50px;
+    border-bottom: solid black;
+}
+
+.recommend_header {
+    display: flex;
+    justify-content: center;
+}
+
+.recommend_header h1 {
+    font-family: "GermanFont", sans-serif;
+    font-size: 80px;
+}
+
+.cars_cards {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 30px 0 30px;
+    justify-content: space-around;
+}
+
+.car_block {
+    border-color: black;
+    border: solid;
+    padding: 10px;
+}
+
+.car_block img{
+    width: 580px;
+    height: 300px;
+    border: black;
+}
+
+.car_block h2 {
+    display: flex;
+    font-family: "GermanFont", sans-serif;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.car_additional {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.car_additional p {
+    padding: 20px 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.buy_car {
+    display: flex;
+    background-color: rgb(118, 140, 255);
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: "GermanFont", sans-serif;
+    cursor: pointer;
+}
+
+
+
+/* end recommend cars section */
+
+/* book a test drive */
+.test_drive_section {
+    display: flex;
+    margin-top: 40px;
+    padding: 0px 45px 50px 45px;
+    border-bottom: solid black;
+
+}
+
+.test_drive {
+    padding-left: 12%;
+}
+
+.test_drive h1 {
+    font-family: "GermanFont", sans-serif;
+    font-size: 70px;
+}
+
+.test_drive h2{
+    margin: 15px 0 10px 0;
+}
+
+.test_drive_content {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.test_drive_content p{
+    padding: 15px 0 15px 0;
+}
+
+.test_drive_content p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.test_drive_img {
+    display: flex;
+    justify-content: right;
+    
+}
+
+.test_drive_img img {
+    width: 700px;
+    height: 400px;
+    margin-right: -40%;
+}
+
+/* about section */
+
+.about_section {
+    padding: 45px;
+    margin-bottom: 30px;
+    border-bottom: solid black;
+}
+
+.about_group {
+    padding: 45px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about_group h2 {
+    font-family: "GermanFont", sans-serif;
+    font-size: 30px;
+}
+
+.about_group p {
+    margin: 30px 0 30px 0;
+    font-size: 25px;
+}
+
+.about_contact p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about_links p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about_exp p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about_icons {
+    display: flex;
+    justify-content: center;
+}
+
+.about_icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 25px 0 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    /* reusable code */
+
+    .menu_window {
+        display: grid;
+    }
+
+    .close_button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .open_menu_window {
+        display: grid;
+        position: fixed;
+    }
+
+    .about_group_header {
+        display: grid;
+        padding: 30px;
+    }
+
+    .about_group_header h2 {
+        font-size: 30px;
+    }
+
+    .about_group_header p {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .about_icons_header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #menu_button {
+        margin-left: 10px;
+        margin-top: 180px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .header_name {
+        line-height: 0.8;
+        left: 55%;
+    }
+
+    #logo {
+        width: 200px;
+        height: 200px;
+        left: 10%;
+        top: -30px;
+    }
+
+    .desc_car p {
+        width: 90%;
+        margin-left: 15px;
+    }
+
+    #volks_family {
+        width: 400px;
+        height: 250px;
+    }
+
+    .recommend_header h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .car_block img {
+        width: 400px;
+        height: 300px;
+        border: black;
+    }
+
+    .test_drive_section {
+        display: grid;
+    }
+
+    .test_drive {
+        display: grid;
+        padding: 0;
+        justify-content: left;
+        align-content: center;
+    }
+
+    .test_drive h1 {
+        display: flex;
+        font-size: 50px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .test_drive h2 {
+        font-size: 20px;
+    }
+
+    .test_drive_content p {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .test_drive_img {
+        display: block;
+    }
+
+    .test_drive_img img {
+        margin-right: 0;
+        width: 350px;
+        height: 250px;
+    }
+
+    .about_section {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .about_group {
+        display: grid;
+        padding: 10px;
+    }
+
+    .about_group h2 {
+        font-size: 25px;
+    }
+}
+
+@font-face {
+    font-family: "GermanFont";
+    src: url("./fonts/tgl-0-1451-engschrift/TGL_0-1451Eng.ttf");
+}
+
+@font-face {
+    font-family: "GermanLight";
+    src: url("./fonts/Neutra-Text-Light-Alt_FontYukle/Neutra\ Text\ Light\ Alt.ttf");
+}

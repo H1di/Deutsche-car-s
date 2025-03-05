@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Cards</title>
+    <link rel="stylesheet" href="view.css">
+</head>
+
+<body>
+    <div>
+        <img id="menu_button" src="/img/menu.png" alt="menu_button" onclick="menuButton()">
+    
+        <div class="menu_window">
+    
+            <img class="close_button" src="img_icons/close-button.png" alt="" onclick="CloseMenuButton()">
+    
+            <div class="about_section_header">
+                <div class="about_group_header">
+                    <div class="about_contact_header">
+                        <h2>Contact</h2>
+                        <p onclick="window.location.href='contact.html'">Contact us</p>
+                        <p>Find a Deutsche car service</p>
+                    </div>
+                    <div class="about_links_header">
+                        <h2>Quick Links</h2>
+                        <p onclick="window.location.href='bookTestDrive.html'">Book a test drive</p>
+                        <p onclick="window.location.href='view.html'">Our cars</p>
+                        <p>Book a service</p>
+                    </div>
+                    <div class="about_exp_header">
+                        <h2>Experience Deutsche car`s</h2>
+                        <p>Careers</p>
+                        <p onclick="window.location.href='index.html'">DeutscheCars.com</p>
+                    </div>
+                </div>
+                <div class="about_icons_header">
+                    <a href="https://www.facebook.com" target="_blank"><img src="img_icons/facebook.png" alt=""> </a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="img_icons/instagram.png" alt=""> </a>
+                    <a href="https://www.tiktok.com" target="_blank"><img src="img_icons/tik-tok.png" alt=""> </a>
+                    <a href="https://x.com" target="_blank"><img src="img_icons/twitter-alt.png" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="header">
+    
+        <h1 class="header_name"> Deutsche car`s</h1>
+    
+        <img id="logo" src="/img/logo.png" alt="">
+    
+        <img id="header_back" src="img/volks_banner_empty.png" alt="">
+    </div>
+        <img id="backbutton" onclick="window.location.href='index.html'" src="img/backbutton.png" alt="">
+
+
+    <div class="cars_cards">
+          <div class="car_block" id="golf">
+              <img src="imgForCards/golf_view.jpg" alt="">
+              <h2>The Golf</h2>
+              <div class="car_additional">
+                  <p>34,000€</p>
+                  <p class="buy_car">VIEW</p>
+              </div>
+          </div>
+          <div class="car_block" id="passat">
+              <img src="imgForCards/passat_view.jpg" alt="">
+              <h2>The Passat</h2>
+              <div class="car_additional">
+                  <p>39,000€</p>
+                  <p class="buy_car">VIEW</p>
+              </div>
+          </div>
+          <div class="car_block" id="x5">
+              <img src="imgForCards/bmwx5_view.jpg" alt="">
+              <h2>BMW X5</h2>
+              <div class="car_additional">
+                  <p>100,000€</p>
+                  <p class="buy_car">VIEW</p>
+              </div>
+          </div>
+          <div class="car_block" id="aclass">
+              <img src="imgForCards/mercedesAclass_view.webp" alt="">
+              <h2>Mercedes A class</h2>
+              <div class="car_additional">
+                  <p>45,500€</p>
+                  <p class="buy_car">VIEW</p>
+              </div>
+          </div>
+  
+          <div class="car_block" id="x8">
+              <img src="imgForCards/bmwx8_view.jpg" alt="">
+              <h2>BMW M8</h2>
+              <div class="car_additional">
+                  <p>240,000€</p>
+                  <p class="buy_car">VIEW</p>
+              </div>
+          </div>
+  
+          <div class="car_block" id="tiguan">
+              <img src="imgForCards/tiguan_view.webp" alt="">
+              <h2>The Tiguan</h2>
+              <div class="car_additional">
+                  <p>49,750€</p>
+                  <p class="buy_car">VIEW</p>
+              </div>
+          </div>
+  
+          <div class="car_block" id="cle">
+              <img src="imgForCards/mercedesCLE_view.webp" alt="">
+              <h2>Mercedes CLE</h2>
+              <div class="car_additional">
+                  <p>84,706€</p>
+                  <p class="buy_car">VIEW</p>
+              </div>
+          </div>
+    </div>
+
+    <script src="receive.js"></script>
+    <script src="menuButton.js"></script>
+    <script src="pickCar.js"></script>
+</body>
+
+</html>

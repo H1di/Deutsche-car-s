@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "GermanLight", sans-serif;
+}
+
+/* menu window*/
+#menu_button {
+    display: flex;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    z-index: 2;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.menu_window {
+    position: fixed;
+    z-index: 6;
+    background: #01a4e1;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.open_menu_window {
+    visibility: visible;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.close_button {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: left;
+    left: 10%;
+    top: 5%;
+    cursor: pointer;
+}
+
+.about_section_header {
+    padding: 45px 45px 0 45px;
+    margin-bottom: 30px;
+    border-bottom: solid black;
+    justify-content: space-between;
+}
+
+.about_group_header {
+    padding: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about_contact_header {
+    margin: 30px;
+}
+
+.about_links_header {
+    margin: 30px;
+}
+
+.about_exp_header {
+    margin: 30px;
+}
+
+.about_group_header h2 {
+    font-family: "GermanFont", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.about_group_header p {
+    margin: 30px 0 30px 0;
+    font-size: 30px;
+    line-height: 2;
+    font-weight: 900;
+}
+
+.about_contact_header p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about_links_header p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about_exp_header p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about_icons_header {
+    display: flex;
+    justify-content: center;
+}
+
+.about_icons_header img {
+    width: 70px;
+    height: 70px;
+    margin: 0 25px 0 25px;
+    cursor: pointer;
+}
+
+/* end menu window */
+
+/* header */
+
+.header_name {
+    display: flex;
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    transform: translateX(-30%);
+    font-size: 80px;
+    font-family: "GermanFont", cursive, serif;
+    color: white;
+    -webkit-text-stroke: 0.1px rgb(62, 170, 205);
+    top: 20px;
+    margin-top: 25px;
+}
+
+#logo {
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    width: 300px;
+    height: 300px;
+    left: 35%;
+    transform: translateX(-25%);
+    top: -50px;
+}
+
+
+#header_back {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#backbutton {
+    display: flex;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    justify-content: left;
+    padding-left: 40px;
+    padding-top: 33px;
+    cursor: pointer;
+}
+/* end header */
+
+/* cars section */
+.cars_cards {
+    margin: 200px 30px 20px 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns per row */
+    gap: 30px;
+    /* Space between the cards */
+}
+
+.car_block {
+    border-color: black;
+    border: solid;
+    padding: 10px;
+    height: 520px;
+    width: 500px;
+    
+}
+
+.car_block img {
+    width: 500px;
+    height: 250px;
+    border: black;
+}
+
+.car_block h2 {
+    display: flex;
+    font-family: "GermanFont", sans-serif;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.car_additional {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.car_additional p {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.buy_car {
+    display: flex;
+    background-color: rgb(118, 140, 255);
+    width: 150px;
+    height: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: "GermanFont", sans-serif;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .cars_cards {
+        grid-template-columns: 1fr;
+        display: grid;
+        margin: 200px 20px 20px 30px;        
+    }
+
+    .menu_window {
+        display: grid;
+    }
+
+    .close_button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .open_menu_window {
+        display: grid;
+        position: fixed;
+    }
+
+    .about_group_header {
+        display: grid;
+        padding: 30px;
+    }
+
+    .about_group_header h2 {
+        font-size: 30px;
+    }
+
+    .about_group_header p {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .about_icons_header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #menu_button {
+        margin-left: 35px;
+        margin-top: 170px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .header_name {
+        line-height: 0.8;
+        left: 55%;
+    }
+
+    #logo {
+        width: 200px;
+        height: 200px;
+        left: 10%;
+        top: -30px;
+    }
+
+    .contact-container h2 {
+        margin-bottom: 0;
+        margin-top: 190px;
+    }
+
+    #backbutton {
+        width: 50px;
+        height: 50px;
+        margin-top: 110px;
+    }
+
+    .popup_contact {
+        width: 300px;
+        height: 250px;
+    }
+
+    .popup_contact h2 {
+        margin: 0;
+    }
+
+    .popup_contact p {
+        margin: 0;
+
+    }
+
+    .car_block {
+        width: 350px;
+    }
+
+    .car_block img {
+        width: 350px;
+    }
+}
+
+@font-face {
+    font-family: "GermanFont";
+    src: url("./fonts/tgl-0-1451-engschrift/TGL_0-1451Eng.ttf");
+}
+
+@font-face {
+    font-family: "GermanLight";
+    src: url("./fonts/Neutra-Text-Light-Alt_FontYukle/Neutra\ Text\ Light\ Alt.ttf");
+}

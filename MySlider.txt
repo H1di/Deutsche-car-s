@@ -1,0 +1,105 @@
+<!--slider
+    <div class="slider-container">
+        <div class="slider">
+            <img src="/img/volks_banner.webp">
+            <img src="/img/bmw_banner.png" >
+            <img src="/img/merc_banner.png">
+    </div>
+
+        <button class="prev-button" aria-label="next slide">&lt;</button>
+        <button class="next-button" aria-label="next slide">&gt</button>
+    </div>
+end slider-->
+
+
+.page-title {
+    text-align: center;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    border-bottom: solid;
+}
+
+.slider img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: black;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+/* end header section */
+
+/*//slider
+// get slider elements
+const slider = document.querySelector('.slider');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+const slides = Array.from(slider.querySelectorAll('img'));
+const slideCount = slides.length;
+let slideIndex = 0;
+
+// button set
+prevButton.addEventListener('click', showPreviousSlide);
+nextButton.addEventListener('click', showNextSlide);
+
+// function for previous slide
+function showPreviousSlide() {
+  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+  updateSlider();
+}
+
+setInterval(showNextSlide, 9000);
+
+// function for showing previous slide
+function showNextSlide() {
+  slideIndex = (slideIndex + 1) % slideCount;
+  updateSlider();
+}
+
+setInterval(updateSlider, 9000);
+
+// function for slide update
+function updateSlider() {
+  slides.forEach((slide, index) => {
+    if (index === slideIndex) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+// slider initialization 
+updateSlider();
+
+//end slider
+*/
