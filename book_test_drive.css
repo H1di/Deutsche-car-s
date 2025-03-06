@@ -170,6 +170,8 @@ body {
 
 #AddressTest {
     text-decoration: underline 1px;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
