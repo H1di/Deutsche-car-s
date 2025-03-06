@@ -193,13 +193,14 @@
 }
 
 .desc_car {
-    display: grid;
+    display: flex;
     align-items: center;
     width: 100%;
     margin-top: 2em;
     margin-bottom: 5em;
     padding-bottom: 4em;
     border-bottom: solid black;
+    justify-content: space-around;
 }
 
 .desc_car p {
@@ -450,6 +451,10 @@
         top: -30px;
     }
 
+    .desc_car {
+        display: block;
+    }
+    
     .desc_car p {
         width: 90%;
         margin-left: 15px;
