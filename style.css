@@ -254,7 +254,7 @@
 }
 
 .car_block img{
-    width: 580px;
+    width: 100%;
     height: 300px;
     border: black;
 }
